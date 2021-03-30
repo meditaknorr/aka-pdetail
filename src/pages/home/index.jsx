@@ -4,23 +4,28 @@ import '../../styles/global.scss'
 export default function Index() {
     return (
         <React.Fragment>
-            <header className={() => {return}}>
-
+            <header className={"main-header"}>
+              header
             </header>
-            <div className={"main-container"}>
-              <main className={() => {return}}>
-                <form onSubmit={(e) => e.preventDefault()} className={"container-search-bar"}>
+
+            <main className={"main-container"}>
+              <aside className={"aside-content"}>
+                aside
+              </aside>
+              <div className={"main-content-block"}>
+                <form className={"main-search-bar"} onSubmit={(e) => e.preventDefault()}>
                   <input type="text" placeholder="Write here your search parameters. E.g.: Mozambique, Portugal" onChange={() => {return}} />
-                  <button className={() => {return}}>search</button>
+                  <button className={""}>search</button>
                 </form>
-                <div className={"container-search-result"}>
+                <div className={"main-search-result"}>
 
                 </div>
-              </main>
-              <aside className={() => {return}}>
+              </div>              
+            </main>
 
-              </aside>
-            </div>
+            <footer className={"main-footer"}>
+              footer
+            </footer>
         </React.Fragment>
     )
 }

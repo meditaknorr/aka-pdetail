@@ -1,0 +1,10 @@
+/**
+*
+* SASS FUNCTIONS
+*/
+
+@import "variables";
+
+@function rem($pixel) {
+  @return ($pixel/$fontSize) + rem;
+}
