@@ -47,11 +47,63 @@ body {
       overflow: hidden;
       display: inline-block;
       border-radius: rem(10);
+      font-weight: bold;
+      text-transform: lowercase;
       width: 20%;
-      //max-height: rem(45);
-      padding: rem(10);
-      margin-right: rem(20);
+      /*max-height: rem(45);*/
+      padding: rem(10) rem(5) rem(10) rem(10);
+      margin: 0 rem(20) 0 0;
+
+      div.keyword-demo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: rem(30);
+        border-radius: rem(5);
+        color: $asideFontColor;
+        margin: 0 0 0 rem(-3);
+        border: rem(1) solid $asideItemsColor;
+        background-color: $asideItemsColor;
+        -webkit-transition: all ease-in-out 2s;
+        -moz-transition: all ease-in-out 2s;
+        transition: all ease-in-out 2s;
+        &:hover {
+          background-color: $asideItems-hover;
+          border: rem(1) solid $asideItemsBorder;
+        }
+
+        .hashtag {
+          width: rem(14);
+          height: rem(14);
+          color: $hashtag;
+          margin: rem(-1) rem(-2) 0 rem(10);
+        }
+        .remove-item {
+          color: $removeItemColor;
+          width: rem(13);
+          height: rem(13);
+          margin: rem(-1) 0 0 rem(5);
+          border-radius: rem(6.5);
+          -webkit-transition: all ease-in-out 0.5s;
+          -moz-transition: all ease-in-out 0.5s;
+          transition: all ease-in-out 0.5s;
+
+          &:hover {
+            background-color: tomato;
+            color: $backgroundColor;
+            cursor: pointer;
+          }
+        }
+        span.country-name {
+          overflow: hidden;
+          word-wrap: normal;
+          text-overflow: ellipsis;
+          margin: rem(-2) 0 0 0;
+          width: rem(140);
+        }
+      }
     }
+
     div.main-content-block {
       display: inline-block;
       width: 80%;

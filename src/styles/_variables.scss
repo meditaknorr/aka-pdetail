@@ -4,8 +4,13 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 $fontSize: 16;
-$backgroundColor: rgba(255, 255, 255, 1.0);
-$fontColor: rgba(0, 0, 0, 0.6);
-$asideColor: rgba(246, 248, 249, 0.3);
-$asideItemsColor:rgba(246, 248, 249, 1.0);
+$backgroundColor: rgba(255, 255, 250, 1.0);
+$fontColor: rgba(#4e413b, 0.8);
+$asideColor: rgba(#e2ded3, 0.2); //rgba(246, 248, 249, 0.4);
+$asideItemsColor: rgba(#e2ded3, 0.4); //rgba(246, 248, 249, 1.0);
+$asideItemsBorder: rgba(#e2ded3, 0.5);
+$asideItems-hover: rgba(#e2ded3, 0.6);
+$asideFontColor: rgba(#4e413b, 0.5);
+$hashtag: rgba(#4e413b, 0.6);
+$removeItemColor: rgba(#ff6d24, 1.0);
 $fontFamily: 'Lato', sans-serif;
