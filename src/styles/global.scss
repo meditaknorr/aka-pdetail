@@ -54,19 +54,19 @@ body {
       padding: rem(10) rem(5) rem(10) rem(10);
       margin: 0 rem(20) 0 0;
 
-      div.keyword-demo {
+      div.tagword-demo {
         display: flex;
         align-items: center;
         width: 100%;
         height: rem(30);
         border-radius: rem(5);
         color: $asideFontColor;
-        margin: 0 0 0 rem(-3);
+        margin: rem(5) 0 rem(5) rem(-3);
         border: rem(1) solid $asideItemsColor;
         background-color: $asideItemsColor;
-        -webkit-transition: all ease-in-out 2s;
-        -moz-transition: all ease-in-out 2s;
-        transition: all ease-in-out 2s;
+        -webkit-transition: all ease-in-out 0.5s;
+        -moz-transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.5s;
         &:hover {
           background-color: $asideItems-hover;
           border: rem(1) solid $asideItemsBorder;
@@ -100,6 +100,7 @@ body {
           text-overflow: ellipsis;
           margin: rem(-2) 0 0 0;
           width: rem(140);
+          cursor: default;
         }
       }
     }
