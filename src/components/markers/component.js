@@ -11,9 +11,9 @@ useEffect(() => {setHashdata(data)}, [data]);
       {
         hashdata.map((data, key) => (
           <div key={data.id} className={"tagword-demo"}>
-            <Hash role="img" aria-label="remove" className={"hashtag"} />
-            <span className={"country-name"}>{data.country}</span>
-            <X id={data.id} role="img" aria-label="remove" className= {"remove-item"} onClick={(e) => {onPress(data.id)}} />
+            <Hash className={"hashtag"} />
+            <span className={"country-name"} role="label" aria-label="country name" >{data.country}</span>
+            <X id={data.id} role="button" aria-label="remove tagged country" className= {"remove-item"} onClick={(e) => {onPress(data.id)}} />
           </div>
           )
         )
