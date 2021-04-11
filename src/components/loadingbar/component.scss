@@ -1,0 +1,40 @@
+@import "../../styles/variables", "../../styles/funtions";
+
+svg.loadingIcon {
+  margin: 0 rem(-20) 0 0;
+  height: rem(18);
+  width: rem(65);
+  background-color: $searchbuttonColor;
+  border-radius: rem(4);
+  border: rem(1) solid $searchbuttonborder;
+  polygon.st0 {
+    fill: $backgroundColor;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes first {
+    0%   {opacity: 0.3;}
+    25%  {opacity: 0.3;}
+    50%  {opacity: 0.3;}
+    75%  {opacity: 1.0;}
+    100% {opacity: 1.0;}
+  }
+  @keyframes second {
+    0%   {opacity: 1.0;}
+    25%  {opacity: 0.3;}
+    50%  {opacity: 0.3;}
+    75%  {opacity: 0.3;}
+    100% {opacity: 1.0;}
+  }
+  @keyframes third {
+    0%   {opacity: 1.0;}
+    25%  {opacity: 1.0;}
+    50%  {opacity: 0.3;}
+    75%  {opacity: 0.3;}
+    100% {opacity: 0.3;}
+  }
+
+  polygon#first { animation: second 2s ease-in 1s infinite alternate; }
+  polygon#center { animation: second 2s ease-in 3s infinite alternate; }
+  polygon#last { animation: third 2s ease-in 6s infinite alternate; }
+}

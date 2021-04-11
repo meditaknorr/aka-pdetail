@@ -30,9 +30,7 @@ export default function Index() {
               </aside>
 
               <div className={"main-content-block"}>
-                <div className={"search-bar"}>
-                  <SearchBar />
-                </div>
+                <div className={"search-bar"}><SearchBar /></div>
                 <div className={"search-results"}>
 
                 </div>
