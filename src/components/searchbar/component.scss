@@ -1,0 +1,61 @@
+@import "../../styles/variables", "../../styles/funtions";
+
+form.main-search-bar {
+  width: rem(310);
+  height: rem(30);
+  margin: rem(10) 0 0 0;
+  border-radius: rem(6);
+  border: rem(1) solid $searchbarBorder;
+  background-color: $searchbarColor;
+  display:flex;
+  align-items: center;
+  float: right;
+
+  input[type="text"] {
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+    color: $searchbarText;
+    width: 90%;
+    height: 90%;
+    font-size: rem(12);
+    text-align: right;
+    margin: rem(-2) 0 0 0;
+    padding: 0 rem(10) 0 rem(10);
+    overflow: hidden;
+    &:focus {
+      outline: 0;
+    }
+    &::placeholder {
+      color: $searchbarholder;
+      font-size: rem(11);
+    }
+    &:-ms-input-placeholder {
+      color: $searchbarholder;
+      font-size: rem(11);
+    }
+    &::-ms-input-placeholder {
+      color: $searchbarholder;
+      font-size: rem(11);
+    }
+  }
+  button {
+    height: rem(18);
+    width: rem(65);
+    background-color: $searchbuttonColor;
+    font-size: rem(11);
+    color: $backgroundColor;
+    margin: rem(-2) rem(-20) 0 0;
+    border-radius: rem(4);
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    border: rem(1) solid $searchbuttonborder;
+    outline: 0;
+    &:hover{
+      cursor: pointer;
+      width: rem(68);
+    }
+  }    
+}
