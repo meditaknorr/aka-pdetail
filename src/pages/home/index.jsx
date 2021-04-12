@@ -5,6 +5,7 @@ import '../../styles/global.scss'
 
 export default function Index() {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [marker, setMarker] = useState([
     { "id": 1, "country": "Mozambique"
     }, { "id": 2, "country": "Brazil" }]);
@@ -18,28 +19,28 @@ export default function Index() {
      setMarker(filtered);
    }
 
+   function searchHandler() {
+     setLoading(true);
+   }
+
     return (
         <React.Fragment>
-            <header className={"main-header"}>
-              header
-            </header>
-
+            <header className={"main-header"}> header </header>
             <main className={"main-container"}>
+
               <aside className={"aside-content"}>
                 <Marker data={marker} onPress={markerAction} />
               </aside>
 
               <div className={"main-content-block"}>
-                <div className={"search-bar"}><SearchBar /></div>
-                <div className={"search-results"}>
-
+                <div className={"search-bar"}>
+                  <SearchBar status={loading} onPress={searchHandler} />
                 </div>
+                <div className={"search-results"}> </div>
               </div>
-            </main>
 
-            <footer className={"main-footer"}>
-              footer
-            </footer>
+            </main>
+            <footer className={"main-footer"}> footer </footer>
         </React.Fragment>
     )
 }
