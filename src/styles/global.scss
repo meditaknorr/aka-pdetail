@@ -54,63 +54,21 @@ body {
       padding: rem(5) rem(5) rem(10) rem(10);
       margin: 0 rem(20) 0 0;
 
-      div.tagword-demo {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: rem(30);
-        border-radius: rem(5);
-        color: $asideFontColor;
-        margin: rem(5) 0 rem(5) rem(-3);
-        border: rem(1) solid $asideItemsColor;
-        background-color: $asideItemsColor;
-        -webkit-transition: all ease-in-out 0.5s;
-        -moz-transition: all ease-in-out 0.5s;
-        transition: all ease-in-out 0.5s;
-        &:hover {
-          background-color: $asideItems-hover;
-          border: rem(1) solid $asideItemsBorder;
-        }
-
-        .hashtag {
-          width: rem(14);
-          height: rem(14);
-          color: $hashtag;
-          margin: rem(-1) rem(-2) 0 rem(10);
-        }
-        .remove-item {
-          color: $removeItemColor;
-          width: rem(13);
-          height: rem(13);
-          margin: rem(-1) 0 0 rem(5);
-          border-radius: rem(6.5);
-          -webkit-transition: all ease-in-out 0.5s;
-          -moz-transition: all ease-in-out 0.5s;
-          transition: all ease-in-out 0.5s;
-
-          &:hover {
-            background-color: tomato;
-            color: $backgroundColor;
-            cursor: pointer;
-          }
-        }
-        span.country-name {
-          overflow: hidden;
-          word-wrap: normal;
-          text-overflow: ellipsis;
-          margin: rem(-2) 0 0 0;
-          width: rem(140);
-          cursor: default;
-        }
-      }
     }
     div.main-content-block {
       display: inline-block;
       width: 80%;
       padding: 0 rem(10);
 
-      div.main-search-result {
+      div.search-results {
+        width: 100%;
+        min-height: rem(50);
+        margin: rem(43) 0 0 0;
+      }
+      div.search-bar {
         display: block;
+        width: 100%;
+        height: rem(32);
       }
     }
   }

@@ -1,0 +1,47 @@
+@import "../../styles/variables", "../../styles/funtions";
+
+div.country-tile {
+  width: rem(280);
+  height: rem(120);
+  background-color: $tilebackground;
+  border: rem(1) solid $tileborder;
+  font-family: inherit;
+  border-radius: rem(5);
+  padding: rem(10) rem(10) rem(10) rem(50);
+  overflow: hidden;
+  position: relative;
+  display: inline-grid;
+  margin: rem(10);
+
+    .name-space {
+    height: rem(50);
+    width: rem(120);
+    color: $backgroundColor;
+    background-color: $tilecountry;
+    font-weight: 600;
+    text-transform: capitalize;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: rem(-35);
+    bottom: rem(35);
+    font-size: rem(14);
+    text-align: center;
+    padding: 0 0 rem(0) 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-space {
+    color: black;
+    padding: 0 0 0 rem(15);
+    img {
+      width: 50px;
+      height: 50px;
+      border: 1px solid red;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: rem(10);
+    }
+  }
+}
